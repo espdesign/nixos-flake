@@ -11,6 +11,7 @@
         self.nixosModules.nvidia
         self.nixosModules.gaming
 
+        self.nixosModules.apps
         self.nixosModules.dev
         self.nixosModules.syncthing
         self.nixosModules.zsh

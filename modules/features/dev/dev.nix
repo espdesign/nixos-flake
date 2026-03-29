@@ -48,6 +48,7 @@
       environment.systemPackages = [
         vscode-with-extensions
         pkgs.nil
+
       ];
 
       environment.etc."vscode/settings.json".text = builtins.toJSON userSettings;

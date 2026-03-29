@@ -11,6 +11,7 @@
         self.nixosModules.pipewire
         self.nixosModules.syncthing
 
+        self.nixosModules.apps
         self.nixosModules.dev
         self.nixosModules.zsh
         self.nixosModules.user
