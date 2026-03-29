@@ -1,7 +1,7 @@
-{ self, inputs, ... }:
+{ inputs, ... }:
 {
-  flake.nixosModules.baseUser =
-    { pkgs, ... }:
+  flake.nixosModules.base.user =
+    { pkgs, self, ... }:
     {
       users.users.espdesign = {
         isNormalUser = true;

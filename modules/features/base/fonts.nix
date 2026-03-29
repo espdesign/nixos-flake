@@ -1,7 +1,7 @@
-{ self, inputs, ... }:
+{ inputs, ... }:
 {
-  flake.nixosModules.baseFonts =
-    { pkgs, ... }:
+  flake.nixosModules.base.fonts =
+    { pkgs, self, ... }:
     {
       fonts.packages = with pkgs; [
         fira-code

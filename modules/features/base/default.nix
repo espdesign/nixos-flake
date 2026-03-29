@@ -1,13 +1,13 @@
 { inputs, ... }:
 {
-  flake.nixosModules.base =
+  flake.nixosModules.base.default =
     { pkgs, self, ... }:
 
     {
       imports = [
-        self.nixosModules.baseUser
-        self.nixosModules.baseFonts
-        self.nixosModules.baseNix
+        self.nixosModules.userConfiguration
+        self.nixosModules.fonts
+        self.nixosModules.nix
       ];
 
       environment.systemPackages = with pkgs; [

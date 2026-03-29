@@ -7,9 +7,9 @@
       # import any other modules from here
       imports = [
         self.nixosModules.frameworkHardware
-        self.nixosModules.nix
-        self.nixosModules.gnome
         self.nixosModules.base
+
+        self.nixosModules.gnome
       ];
 
       networking.hostName = "framework";

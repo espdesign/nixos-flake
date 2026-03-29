@@ -7,6 +7,8 @@
       # import any other modules from here
       imports = [
         self.nixosModules.desktopHardware
+        self.nixosModules.base
+
         self.nixosModules.gnome
       ];
 
