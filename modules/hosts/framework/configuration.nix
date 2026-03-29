@@ -7,14 +7,11 @@
       # import any other modules from here
       imports = [
         self.nixosModules.frameworkHardware
+        self.nixosModules.nix
         self.nixosModules.gnome
         self.nixosModules.userConfiguration
       ];
 
-      nix.settings.experimental-features = [
-        "nix-command"
-        "flakes"
-      ];
       networking.hostName = "framework";
 
       boot.loader.systemd-boot.enable = true;
