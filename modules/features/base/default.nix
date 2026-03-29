@@ -1,15 +1,9 @@
 { inputs, ... }:
 {
-  flake.nixosModules.base.default =
+  flake.nixosModules.default =
     { pkgs, self, ... }:
 
     {
-      imports = [
-        self.nixosModules.userConfiguration
-        self.nixosModules.fonts
-        self.nixosModules.nix
-      ];
-
       environment.systemPackages = with pkgs; [
         git
         curl

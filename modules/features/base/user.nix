@@ -1,6 +1,6 @@
 { inputs, ... }:
 {
-  flake.nixosModules.base.user =
+  flake.nixosModules.user =
     { pkgs, self, ... }:
     {
       users.users.espdesign = {
