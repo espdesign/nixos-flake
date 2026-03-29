@@ -11,6 +11,8 @@
         self.nixosModules.nvidia
         self.nixosModules.gaming
 
+        self.nixosModules.zsh
+        self.nixosModules.printing
         self.nixosModules.pipewire
         self.nixosModules.default
         self.nixosModules.user

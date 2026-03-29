@@ -18,7 +18,8 @@
       services.gnome.games.enable = false;
       environment.gnome.excludePackages = with pkgs; [
         gnome-tour
-        gnome-user-docs
+        gnome-music
+        epiphany
       ];
 
       # Add GNOME specific system packages (like Tweaks)

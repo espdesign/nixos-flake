@@ -10,6 +10,7 @@
         self.nixosModules.default
         self.nixosModules.pipewire
 
+        self.nixosModules.zsh
         self.nixosModules.user
         self.nixosModules.nix
         self.nixosModules.fonts
