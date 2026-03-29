@@ -15,7 +15,6 @@
         window-decoration = auto
         background-opacity = 0.95
         background-blur = true
-        font-family = JetBrains Mono Regular
       '';
 
       environment.systemPackages = with pkgs; [
@@ -58,14 +57,20 @@
         };
 
         # Replacing initContent with interactiveShellInit for global use
+        promptInit = ''
+
+          # Point Starship to the global config you created
+          export STARSHIP_CONFIG=/etc/xdg/starship.toml
+
+          # Initialize Starship
+          eval "$(starship init zsh)"
+        '';
         interactiveShellInit = ''
           export NIX_PATH=nixpkgs=channel:nixos-unstable
           export NIX_LOG=info
           export TERMINAL=ghostty
           export EDITOR=nvim
 
-          # Initialize Starship
-          eval "$(starship init zsh)"
 
           # Initialize Zoxide (replaces cd)
           eval "$(zoxide init zsh --cmd cd)"
