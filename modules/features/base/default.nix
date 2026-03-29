@@ -26,5 +26,19 @@
         LC_TIME = "en_US.UTF-8";
       };
 
+      #Install Browsers
+      programs.chromium.enable = true;
+      programs.firefox = {
+        enable = true;
+
+        preferences = {
+          "browser.startup.homepage" = "https://evansp.com";
+          "privacy.resistFingerprinting" = true;
+        };
+
+        policies = {
+          DisableTelemetry = true;
+        };
+      };
     };
 }

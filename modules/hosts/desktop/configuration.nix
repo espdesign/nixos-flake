@@ -11,6 +11,8 @@
         self.nixosModules.nvidia
         self.nixosModules.gaming
 
+        self.nixosModules.dev
+        self.nixosModules.syncthing
         self.nixosModules.zsh
         self.nixosModules.printing
         self.nixosModules.pipewire

@@ -9,7 +9,9 @@
         self.nixosModules.frameworkHardware
         self.nixosModules.default
         self.nixosModules.pipewire
+        self.nixosModules.syncthing
 
+        self.nixosModules.dev
         self.nixosModules.zsh
         self.nixosModules.user
         self.nixosModules.nix
