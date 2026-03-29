@@ -7,6 +7,11 @@
       # import any other modules from here
       imports = [
         self.nixosModules.desktopHardware
+        #specific to gaming machine
+        self.nixosModules.nvidia
+        self.nixosModules.gaming
+
+        self.nixosModules.pipewire
         self.nixosModules.default
         self.nixosModules.user
         self.nixosModules.nix
