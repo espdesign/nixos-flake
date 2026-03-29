@@ -8,6 +8,7 @@
       imports = [
         self.nixosModules.frameworkHardware
         self.nixosModules.gnome
+        self.nixosModules.userConfiguration
       ];
 
       nix.settings.experimental-features = [

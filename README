@@ -1,0 +1,5 @@
+# Example run in vm
+
+```bash
+nix run .#nixosConfigurations.framework.config.system.build.vm
+```
