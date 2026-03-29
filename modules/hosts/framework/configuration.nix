@@ -10,6 +10,7 @@
         self.nixosModules.nix
         self.nixosModules.gnome
         self.nixosModules.userConfiguration
+        self.nixosModules.ghostty
       ];
 
       networking.hostName = "framework";
