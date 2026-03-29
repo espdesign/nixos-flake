@@ -7,15 +7,20 @@
       # import any other modules from here
       imports = [
         self.nixosModules.frameworkHardware
-        self.nixosModules.niri
+        self.nixosModules.gnome
       ];
 
       nix.settings.experimental-features = [
         "nix-command"
         "flakes"
       ];
+      networking.hostName = "framework";
 
-      # ...
+      boot.loader.systemd-boot.enable = true;
+      boot.loader.efi.canTouchEfiVariables = true;
+
+      system.stateVersion = "24.05";
+
     };
 
 }
