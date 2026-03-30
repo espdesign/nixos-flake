@@ -12,7 +12,7 @@
         self.nixosModules.gaming
 
         self.nixosModules.apps
-        self.nixosModules.dev
+        self.nixosModules.code
         self.nixosModules.syncthing
         self.nixosModules.zsh
         self.nixosModules.printing

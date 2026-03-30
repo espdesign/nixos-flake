@@ -12,7 +12,7 @@
         self.nixosModules.syncthing
 
         self.nixosModules.apps
-        self.nixosModules.dev
+        self.nixosModules.code
         self.nixosModules.zsh
         self.nixosModules.user
         self.nixosModules.nix
